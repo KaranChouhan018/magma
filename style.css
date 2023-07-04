@@ -455,6 +455,35 @@
       position: relative;
       z-index: 9999;
   }
+  .loop-section{
+    background: #02268e;
+    height: 120px;
+    position: absolute;
+    top: 60%;
+    width: 200%;
+    text-align: center;
+}
+.animation{
+    background: url(logos-strip.png) repeat-x;
+    background-size: 1653px auto;
+    height: 100%;
+    width: 80%;
+    animation-name: animation;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes animation{
+    0%{
+        background-position: -5000px 0px;
+
+    }
+    100%{
+        background-position: -1000px 0px;
+
+    }
+}
   
   .center14{
       height: 0%;
